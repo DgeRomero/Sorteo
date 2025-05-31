@@ -1,0 +1,49 @@
+.tituloAnuncio{
+    font-family: "Fascinate Inline", system-ui;
+    font-size: 2rem;
+    color: rgb(94, 162, 221);
+    -webkit-text-stroke: rgb(17, 17, 17) 0.5px;
+    text-align: center;
+    margin: 1rem;
+}
+#anuncio{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    padding: 1rem;
+
+}
+.sec{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 110%;
+    border-style: double;
+    border-color: black;
+}
+.ganador{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.2rem;
+}
+.numero{
+    font-size: 10rem;
+} 
+#btnVolver{
+    margin-top: 1rem;
+}
+
+/* .ganador{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 160px;
+    padding: 1rem;
+    border-style: double;
+    border-color: black;
+}
