@@ -1,10 +1,11 @@
 let minimo = document.getElementById('min')
 let maximo = document.getElementById('max')
-let btn = document.getElementById('btn')
+let btn = document.getElementById('btnVolver')
 let ganador = document.getElementById('numero')
 let principal = document.getElementById('principal')
 let anuncio = document.getElementById('anuncio')
-let cargando = document.getElementById('cargando')
+let sorteando = document.getElementById('sorteando')
+let felicitaciones = document.getElementById('felicitaciones')
 
 
 
@@ -12,33 +13,21 @@ function sorteo(){
     
     let min = parseInt(minimo.value);
     let max = parseInt(maximo.value);
+
+    sorteando.innerHTML = 'SORTEANDO.....'
     ganador.innerHTML = '.....'
+    
     setTimeout(()=> {
         const randon = Math.floor(Math.random() * (max - min + 1)) + min;
-        ganador.innerHTML = randon  
+        sorteando.innerHTML = 'NÚMERO GANADOR'
+        ganador.innerHTML = randon
+        felicitaciones.innerHTML = '¡FELICITACIONES!'
+        btn.style.display = 'inline'
     }, 3000)
         
     principal.style.display = 'none'
     anuncio.style.display = 'flex'
 }
-
-// function abrirCargar(){
-//     cargando.style.display = 'flex'
-//     principal.style.display = 'none'
-//     anuncio.style.display = 'none'
-// }
-
-// function cerrarCargar(){
-//     setTimeout(abrirCargar(), 5000)
-//     cargando.style.display = 'none'
-//     principal.style.display = 'none'
-//     anuncio.style.display = 'flex'
-// }
-
-// function cargar(){
-//     setTimeout(abrirCargar(), 3000)
-//     cerrarCargar()
-// }
 
 function volver(){
     minimo.value = ''

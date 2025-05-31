@@ -35,6 +35,7 @@
 } 
 #btnVolver{
     margin-top: 1rem;
+    display: none;
 }
 
 /* .ganador{
