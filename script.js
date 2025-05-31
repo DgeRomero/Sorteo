@@ -34,4 +34,7 @@ function volver(){
     maximo.value = ''
     principal.style.display = 'flex'
     anuncio.style.display = 'none'
+    sorteando.innerHTML = ''
+    felicitaciones.innerHTML = ''
+    btn.style.display = 'none'
 }
